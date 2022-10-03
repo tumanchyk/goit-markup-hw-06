@@ -466,7 +466,7 @@ p {
 .footer-input {
   width: 358px;
   color: var(--primary-color-bg);
-  padding: 15px 0 15px 16px;
+  padding: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
@@ -559,14 +559,16 @@ p {
 .name-input,
 .textarea-name {
   display: inline-block;
-  margin-top: 10px;
-  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.16;
+  margin-bottom: 4px;
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
 }
-
+.form-item {
+  display: block;
+  margin-bottom: 10px;
+}
 .form-field {
   position: relative;
   color: var(--primary-black-color);
@@ -574,7 +576,7 @@ p {
 }
 .form-input {
   width: 100%;
-  padding: 12px 0 12px 42px;
+  padding: 12px 12px 12px 42px;
   border: 1px solid var(--border-modal);
   border-radius: 4px;
   transition: border var(--transition-duration) var(--timing-function);
@@ -638,6 +640,21 @@ p {
 .accept-info {
   color: var(--primary-text-color);
   margin-left: 8px;
+}
+.link-cond {
+  color: var(--accent-color);
+  position: relative;
+  text-decoration: none;
+}
+.link-cond::after {
+  position: absolute;
+  bottom: 1.5px;
+  left: 0;
+  display: inline-block;
+  content: '';
+  width: 113px;
+  height: 1px;
+  background-color: var(--accent-color);
 }
 
 .link-cond {
